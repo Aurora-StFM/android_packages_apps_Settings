@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The SomethingOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<!-- SomethingOS: NothingOS's monochrome light palette for Settings, replacing
+     SettingsLib's Material You colours (values-v34 / -v36). Values measured
+     from NothingOS's Settings: light grey page, near-white cards, near-black
+     titles, grey summaries and section headers, white switch thumbs on a dark
+     grey (on) or light grey (off) track. Dark theme: values-night-v36. -->
+<resources>
+    <!-- Page and title bar background (theme colorBackground, collapsed title bar) -->
+    <color name="settingslib_materialColorSurfaceContainer">#F1F1F1</color>
+    <color name="settingslib_materialColorBackground">#F1F1F1</color>
+    <color name="settingslib_materialColorSurface">#F1F1F1</color>
+    <color name="settingslib_materialColorSurfaceDim">#E6E6E6</color>
+    <color name="settingslib_materialColorSurfaceContainerLowest">#FFFFFF</color>
+    <color name="settingslib_materialColorSurfaceContainerLow">#F6F6F6</color>
+
+    <!-- Cards (settingslib_round_background*) -->
+    <color name="settingslib_materialColorSurfaceBright">#FBFBFB</color>
+    <color name="settingslib_materialColorSurfaceVariant">#FBFBFB</color>
+
+    <!-- Dialogs, menus, raised elements -->
+    <color name="settingslib_materialColorSurfaceContainerHigh">#FFFFFF</color>
+    <color name="settingslib_materialColorSurfaceContainerHighest">#E4E4E4</color>
+
+    <!-- Text and icons -->
+    <color name="settingslib_materialColorOnSurface">#0E0E0E</color>
+    <color name="settingslib_materialColorOnBackground">#0E0E0E</color>
+    <color name="settingslib_materialColorOnSurfaceVariant">#6F6F6F</color>
+    <color name="settingslib_materialColorOutline">#C6C6C6</color>
+    <color name="settingslib_materialColorOutlineVariant">#E0E0E0</color>
+    <color name="settingslib_materialColorSurfaceInverse">#1B1B1B</color>
+    <color name="settingslib_materialColorOnSurfaceInverse">#F1F1F1</color>
+    <color name="settingslib_text_color_primary_device_default">#0E0E0E</color>
+    <color name="settingslib_text_color_secondary_device_default">#6F6F6F</color>
+
+    <!-- Accents: dark grey / black where Material You uses the wallpaper colour -->
+    <color name="settingslib_materialColorPrimary">#1B1B1B</color>
+    <color name="settingslib_materialColorOnPrimary">#FFFFFF</color>
+    <color name="settingslib_materialColorPrimaryContainer">#E4E4E4</color>
+    <color name="settingslib_materialColorOnPrimaryContainer">#0E0E0E</color>
+    <color name="settingslib_materialColorPrimaryInverse">#E0E0E0</color>
+    <color name="settingslib_materialColorSecondary">#3A3A3A</color>
+    <color name="settingslib_materialColorOnSecondary">#FFFFFF</color>
+    <color name="settingslib_materialColorSecondaryContainer">#E4E4E4</color>
+    <color name="settingslib_materialColorOnSecondaryContainer">#0E0E0E</color>
+    <color name="settingslib_materialColorTertiary">#3A3A3A</color>
+    <color name="settingslib_materialColorOnTertiary">#FFFFFF</color>
+    <color name="settingslib_materialColorTertiaryContainer">#E4E4E4</color>
+    <color name="settingslib_materialColorOnTertiaryContainer">#0E0E0E</color>
+
+    <!-- Section headers: grey, not the accent colour -->
+    <color name="settingslib_text_color_preference_category_title">#6F6F6F</color>
+    <color name="settingslib_colorSurfaceHeader">#FBFBFB</color>
+
+    <!-- Switches: white thumb; dark grey track when on, light grey when off -->
+    <color name="settingslib_track_on_color">#5E5E5E</color>
+    <color name="settingslib_thumb_on_color">#FFFFFF</color>
+    <color name="settingslib_track_off_color">#C6C6C6</color>
+    <color name="settingslib_thumb_off_color">#FFFFFF</color>
+    <color name="settingslib_thumb_disabled_color">#E4E4E4</color>
+    <color name="settingslib_state_on_color">#E4E4E4</color>
+    <color name="settingslib_state_off_color">#E4E4E4</color>
+
+    <!-- Dialogs -->
+    <color name="settingslib_dialog_accent">#1B1B1B</color>
+    <color name="settingslib_dialog_background">#FFFFFF</color>
+</resources>

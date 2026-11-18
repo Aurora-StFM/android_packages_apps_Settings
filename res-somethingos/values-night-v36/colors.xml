@@ -8,7 +8,7 @@
      tinted from the wallpaper. Values measured from NothingOS's Settings:
      black page, #191919 cards, near-white titles, grey summaries and section
      headers, light switch track with a dark thumb when on.
-     Light theme: still LineageOS's colours until we have references. -->
+     Light theme: values-v36. -->
 <resources>
     <!-- Page and title bar background (theme colorBackground, collapsed title bar) -->
     <color name="settingslib_materialColorSurfaceContainer">#000000</color>
