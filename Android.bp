@@ -65,7 +65,11 @@ android_library {
         "res",
         "res-export", // for external usage
         "res-product",
-        "res-somethingos", // SomethingOS: overrides of SettingsLib resources
+        // SomethingOS: overrides of SettingsLib resources, to restyle Settings
+        // like NothingOS without forking frameworks/base. A resource there with
+        // the same name and qualifier as a SettingsLib one replaces it. Only
+        // resource files may go in it (aapt2 rejects anything else).
+        "res-somethingos",
     ],
     optional_uses_libs: ["com.android.extensions.appfunctions"],
     static_libs: [
