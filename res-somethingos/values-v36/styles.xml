@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The SomethingOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- SomethingOS: SettingsLib's expressive title bar (values-v36/styles_expressive.xml),
+         with NothingOS's spacing: titles 20dp from the edges, closer to the
+         content, up to two lines. Other items unchanged. -->
+    <style name="SettingsLibCollapsingToolbarLayoutStyle">
+        <item name="expandedTitleTextAppearance">@style/SettingsLibCollapsingToolbarTitle.Expanded</item>
+        <item name="collapsedTitleTextAppearance">@style/SettingsLibCollapsingToolbarTitle.Collapsed</item>
+        <item name="expandedTitleMarginStart">20dp</item>
+        <item name="expandedTitleMarginEnd">20dp</item>
+        <item name="expandedTitleMarginBottom">20dp</item>
+        <item name="maxLines">2</item>
+        <item name="scrimVisibleHeightTrigger">@dimen/settingslib_scrim_visible_height_trigger</item>
+        <item name="contentScrim">@color/settingslib_materialColorSurfaceVariant</item>
+        <item name="statusBarScrim">@null</item>
+        <item name="scrimAnimationDuration">50</item>
+        <item name="collapsedTitleTextColor">@color/settingslib_materialColorOnSurface</item>
+        <item name="expandedTitleTextColor">@color/settingslib_materialColorOnSurface</item>
+        <item name="titleCollapseMode">fade</item>
+        <item name="extraMultilineHeightEnabled">true</item>
+    </style>
+
+    <!-- SomethingOS: large titles a little smaller (NothingOS ~34dp vs 36dp).
+         The font itself (serif or dot-matrix) is set in code by SomethingTitles. -->
+    <style name="SettingsLibCollapsingToolbarTitle.Expanded" parent="@style/TextAppearance.SettingsLib.DisplaySmall.Emphasized">
+        <item name="android:textSize">34dp</item>
+    </style>
+</resources>

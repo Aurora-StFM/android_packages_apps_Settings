@@ -139,8 +139,12 @@ public class SettingsBaseActivity extends FragmentActivity implements CategoryHa
                     findViewById(com.android.settingslib.collapsingtoolbar.R.id.collapsing_toolbar);
             mAppBarLayout = findViewById(R.id.app_bar);
             getToolbarDelegate().initCollapsingToolbar(mCollapsingToolbarLayout, mAppBarLayout);
-            // SomethingOS: serif or dot-matrix page titles
+            // SomethingOS: serif or dot-matrix page titles, starting large
+            // (expanded) below the back arrow, as in NothingOS
             SomethingTitles.applyTypeface(this, mCollapsingToolbarLayout);
+            if (mAppBarLayout != null) {
+                mAppBarLayout.setExpanded(true, false);
+            }
         } else {
             super.setContentView(R.layout.settings_base_layout);
         }
