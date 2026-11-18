@@ -79,6 +79,11 @@ abstract class BaseTextReadingScreen(val isUiOnly: Boolean) : PreferenceScreenMi
                 title = R.string.category_title_display_text_size,
             ) +=
                 {
+                    // SomethingOS: system font picker, except in the setup wizard
+                    if (entryPoint != EntryPoint.SUW_VISION_SETTINGS &&
+                        entryPoint != EntryPoint.SUW_ANYTHING_ELSE) {
+                        +SystemFontPreference()
+                    }
                     +fontSizePreference
                     +displaySizePreference
                 }
