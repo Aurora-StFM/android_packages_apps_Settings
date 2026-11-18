@@ -9,4 +9,15 @@
     <string name="somethingos_system_font_purpose">Opens a picker for the font used across the system, Geist or Roboto.</string>
     <string name="somethingos_system_font_geist" translatable="false">Geist</string>
     <string name="somethingos_system_font_roboto" translatable="false">Roboto</string>
+
+    <!-- Special features (main Settings list) -->
+    <string name="somethingos_special_features_title">Special features</string>
+    <string name="menu_key_somethingos_special_features" translatable="false">top_level_somethingos_special_features</string>
+
+    <!-- Special features > Experimental features -->
+    <string name="somethingos_experimental_features_title">Experimental features</string>
+    <string name="somethingos_experimental_features_summary">Try upcoming features early</string>
+    <string name="somethingos_dot_title_title">Dot matrix title</string>
+    <string name="somethingos_dot_title_summary">Use the dot-matrix font for Settings titles</string>
+    <string name="somethingos_experimental_features_footer">Experimental features are still being worked on. Try them early and see what\'s coming, but expect the odd rough edge: they may change, or not make it into a release.</string>
 </resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The SomethingOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="somethingos_experimental_features"
+    android:title="@string/somethingos_experimental_features_title">
+
+    <SwitchPreferenceCompat
+        android:key="somethingos_dot_titles"
+        android:icon="@drawable/somethingos_ic_dot_title"
+        android:title="@string/somethingos_dot_title_title"
+        android:summary="@string/somethingos_dot_title_summary"
+        android:persistent="false"
+        settings:controller="com.android.settings.somethingos.DotTitlePreferenceController" />
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="somethingos_experimental_features_footer"
+        android:title="@string/somethingos_experimental_features_footer"
+        android:selectable="false"
+        settings:searchable="false" />
+</PreferenceScreen>

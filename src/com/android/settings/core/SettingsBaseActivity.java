@@ -41,6 +41,7 @@ import com.android.settings.R;
 import com.android.settings.SubSettings;
 import com.android.settings.Utils;
 import com.android.settings.core.CategoryMixin.CategoryHandler;
+import com.android.settings.somethingos.SomethingTitles;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarDelegate;
 import com.android.settingslib.collapsingtoolbar.FloatingToolbarHandler;
 import com.android.settingslib.collapsingtoolbar.widget.ScrollableToolbarItemLayout;
@@ -138,6 +139,8 @@ public class SettingsBaseActivity extends FragmentActivity implements CategoryHa
                     findViewById(com.android.settingslib.collapsingtoolbar.R.id.collapsing_toolbar);
             mAppBarLayout = findViewById(R.id.app_bar);
             getToolbarDelegate().initCollapsingToolbar(mCollapsingToolbarLayout, mAppBarLayout);
+            // SomethingOS: serif or dot-matrix page titles
+            SomethingTitles.applyTypeface(this, mCollapsingToolbarLayout);
         } else {
             super.setContentView(R.layout.settings_base_layout);
         }
@@ -231,7 +234,8 @@ public class SettingsBaseActivity extends FragmentActivity implements CategoryHa
     public void setTitle(CharSequence title) {
         super.setTitle(title);
         if (mCollapsingToolbarLayout != null) {
-            mCollapsingToolbarLayout.setTitle(title);
+            // SomethingOS: capitals with the dot-matrix font
+            mCollapsingToolbarLayout.setTitle(SomethingTitles.format(this, title));
         }
     }
 
@@ -239,7 +243,19 @@ public class SettingsBaseActivity extends FragmentActivity implements CategoryHa
     public void setTitle(int titleId) {
         super.setTitle(getText(titleId));
         if (mCollapsingToolbarLayout != null) {
-            mCollapsingToolbarLayout.setTitle(getText(titleId));
+            // SomethingOS: capitals with the dot-matrix font
+            mCollapsingToolbarLayout.setTitle(SomethingTitles.format(this, getText(titleId)));
+        }
+    }
+
+    /**
+     * SomethingOS: re-applies the title font and case, after the Dot matrix title switch
+     * (Special features > Experimental features) changes.
+     */
+    public void reapplyTitleStyle() {
+        if (mCollapsingToolbarLayout != null) {
+            SomethingTitles.applyTypeface(this, mCollapsingToolbarLayout);
+            mCollapsingToolbarLayout.setTitle(SomethingTitles.format(this, getTitle()));
         }
     }
 

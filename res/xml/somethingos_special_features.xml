@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The SomethingOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<!-- Settings > Special features. Gestures, RAM Booster, Pop-up view and Game
+     Mode are added here as they're built. -->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="somethingos_special_features"
+    android:title="@string/somethingos_special_features_title">
+
+    <Preference
+        android:key="somethingos_experimental_features"
+        android:icon="@drawable/somethingos_ic_experimental"
+        android:title="@string/somethingos_experimental_features_title"
+        android:summary="@string/somethingos_experimental_features_summary"
+        android:fragment="com.android.settings.somethingos.ExperimentalFeaturesFragment" />
+</PreferenceScreen>
