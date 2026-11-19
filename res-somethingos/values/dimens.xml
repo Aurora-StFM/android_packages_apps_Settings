@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The SomethingOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- SomethingOS: SettingsLib's main spacing step (16dp). Settings cards are
+         inset from the screen edge by it and their text by twice it, so 14dp
+         gives NothingOS's tighter layout: cards ~14dp from the edge (NothingOS
+         12dp), text 28dp in (NothingOS 28dp). -->
+    <dimen name="settingslib_expressive_space_small1">14dp</dimen>
+</resources>

@@ -29,4 +29,14 @@
     <style name="SettingsLibCollapsingToolbarTitle.Expanded" parent="@style/TextAppearance.SettingsLib.DisplaySmall.Emphasized">
         <item name="android:textSize">34dp</item>
     </style>
+
+    <!-- SomethingOS: row titles a little larger and regular weight, as in
+         NothingOS (SettingsLib: 16sp medium). Uses a Google Sans family so
+         the Default font switch (Geist / Roboto) still applies. -->
+    <style name="TextAppearance.SettingsLib.PreferenceTitle"
+        parent="@style/TextAppearance.SettingsLib.TitleMedium">
+        <item name="android:fontFamily">variable-body-large</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/settingslib_text_color_primary</item>
+    </style>
 </resources>

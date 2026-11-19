@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The SomethingOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<!-- SomethingOS: plain monochrome icons on the main Settings page, as in
+     NothingOS, instead of coloured circles. Overrides Settings' own colours
+     in res/values and res/values-night (same as values/colors.xml; this folder is the last overlay, so
+     it wins); the text colour already follows light and dark. -->
+<resources>
+    <color name="homepage_blue_variant_bg">@android:color/transparent</color>
+    <color name="homepage_blue_variant_fg">@color/settingslib_materialColorOnSurface</color>
+    <color name="homepage_blue_bg">@android:color/transparent</color>
+    <color name="homepage_blue_fg">@color/settingslib_materialColorOnSurface</color>
+    <color name="homepage_pink_bg">@android:color/transparent</color>
+    <color name="homepage_pink_fg">@color/settingslib_materialColorOnSurface</color>
+    <color name="homepage_orange_bg">@android:color/transparent</color>
+    <color name="homepage_orange_fg">@color/settingslib_materialColorOnSurface</color>
+    <color name="homepage_yellow_bg">@android:color/transparent</color>
+    <color name="homepage_yellow_fg">@color/settingslib_materialColorOnSurface</color>
+    <color name="homepage_green_bg">@android:color/transparent</color>
+    <color name="homepage_green_fg">@color/settingslib_materialColorOnSurface</color>
+    <color name="homepage_grey_bg">@android:color/transparent</color>
+    <color name="homepage_grey_fg">@color/settingslib_materialColorOnSurface</color>
+    <color name="homepage_cyan_bg">@android:color/transparent</color>
+    <color name="homepage_cyan_fg">@color/settingslib_materialColorOnSurface</color>
+    <color name="homepage_red_bg">@android:color/transparent</color>
+    <color name="homepage_red_fg">@color/settingslib_materialColorOnSurface</color>
+    <color name="homepage_purple_bg">@android:color/transparent</color>
+    <color name="homepage_purple_fg">@color/settingslib_materialColorOnSurface</color>
+</resources>
